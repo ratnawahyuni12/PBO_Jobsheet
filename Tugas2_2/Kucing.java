@@ -5,6 +5,24 @@ public class Kucing {
     public int umur;
     public double berat;
 
+    // constructor tanpa parameter
+    public Kucing() {
+        nama = "Meng";
+        warna = "Abu-abu";
+        jenis = "Domestik";
+        umur = 1;
+        berat = 2.5;
+    }
+
+    // constructor berparameter
+    public Kucing(String nama, String warna, String jenis, int umur, double berat) {
+        this.nama = nama;
+        this.warna = warna;
+        this.jenis = jenis;
+        this.umur = umur;
+        this.berat = berat;
+    }
+
     public void makan() {
         System.out.println(nama + " sedang makan");
     }
